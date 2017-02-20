@@ -1,0 +1,26 @@
+# Server settings
+server:
+  port: 8081
+
+# SPRING PROFILES
+spring:       
+    # HTTP ENCODING
+    http:
+        encoding.charset: UTF-8
+        encoding.enable: true
+        encoding.force: true
+    thymeleaf:
+          mode: HTML5
+          encoding: utf-8
+          content-type: text/html
+          cache: false
+          prefix: classpath:/templates/
+    cache:
+      ehcache:
+        config: ehcache.xml
+
+# LOGGING
+logging:
+    level:
+       com.ibatis: debug
+       org.springframework: debug
